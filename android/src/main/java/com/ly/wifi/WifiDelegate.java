@@ -205,6 +205,17 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         clearMethodCallAndResult();
     }
 
+    public void removeNetwork(MethodCall methodCall,MethodChannel.Result result){
+        String ssid = methodCall.argument("ssid");
+        WifiConfiguration wifiConfig = isExist(wifiManager, ssid);
+        if(wifiConfig != null) {
+            result.success(wifiManager.removeNetwork(wifiConfig.networkId));
+            clearMethodCallAndResult();
+        }else{
+            finishWithError("not_found", "network can not be found.");
+        }
+    }
+
     public void connection(MethodCall methodCall, MethodChannel.Result result) {
         if (!setPendingMethodCallAndResult(methodCall, result)) {
             finishWithAlreadyActiveError();

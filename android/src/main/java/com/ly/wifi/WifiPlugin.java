@@ -48,6 +48,9 @@ public class WifiPlugin implements MethodCallHandler {
             case "connection":
                 delegate.connection(call, result);
                 break;
+            case "remove":
+                delegate.removeNetwork(call,result);
+                break;
             default:
                 result.notImplemented();
                 break;
