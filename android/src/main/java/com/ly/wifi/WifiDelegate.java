@@ -240,6 +240,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         if (netId == -1) {
             result.success(0);
         } else {
+            wifiManager.disconnect();
             wifiManager.enableNetwork(netId, true);
             wifiManager.reconnect();
             result.success(1);
@@ -250,24 +251,24 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     private WifiConfiguration createWifiConfig(String ssid, String Password) {
         WifiConfiguration config = new WifiConfiguration();
         config.SSID = "\"" + ssid + "\"";
-        config.allowedAuthAlgorithms.clear();
-        config.allowedGroupCiphers.clear();
-        config.allowedKeyManagement.clear();
-        config.allowedPairwiseCiphers.clear();
-        config.allowedProtocols.clear();
+        //config.allowedAuthAlgorithms.clear();
+        //config.allowedGroupCiphers.clear();
+        //config.allowedKeyManagement.clear();
+        //config.allowedPairwiseCiphers.clear();
+        //config.allowedProtocols.clear();
         WifiConfiguration tempConfig = isExist(wifiManager, ssid);
         if (tempConfig != null) {
             wifiManager.removeNetwork(tempConfig.networkId);
         }
         config.preSharedKey = "\"" + Password + "\"";
-        config.hiddenSSID = true;
-        config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
-        config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);
-        config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
-        config.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.TKIP);
-        config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.CCMP);
-        config.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.CCMP);
-        config.status = WifiConfiguration.Status.ENABLED;
+        //config.hiddenSSID = true;
+        //config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
+        //config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);
+        //config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
+        //config.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.TKIP);
+        //config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.CCMP);
+        //config.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.CCMP);
+        //config.status = WifiConfiguration.Status.ENABLED;
         return config;
     }
 
