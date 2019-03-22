@@ -50,7 +50,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
 
             @Override
             public void askForPermission(String permissionName, int requestCode) {
-                ActivityCompat.requestPermissions(activity, new String[]{permissionName}, requestCode);
+                return ActivityCompat.requestPermissions(activity, new String[]{permissionName}, requestCode);
             }
         });
     }
