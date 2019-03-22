@@ -50,7 +50,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
 
             @Override
             public void askForPermission(String permissionName, int requestCode) {
-                return ActivityCompat.requestPermissions(activity, new String[]{permissionName}, requestCode);
+                ActivityCompat.requestPermissions(activity, new String[]{permissionName}, requestCode);
             }
         });
     }
@@ -227,10 +227,10 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
             return;
         }
 
-        if (!permissionManager.isPermissionGranted(Manifest.permission.ACCESS_FINE_LOCATION)) {
+        /*if (!permissionManager.isPermissionGranted(Manifest.permission.ACCESS_FINE_LOCATION)) {
             permissionManager.askForPermission(Manifest.permission.ACCESS_FINE_LOCATION, REQUEST_ACCESS_FINE_LOCATION_PERMISSION);
             return;
-        }
+        }*/
 
         connection();
     }
