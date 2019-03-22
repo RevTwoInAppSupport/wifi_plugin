@@ -242,16 +242,23 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     private void connection() {
         String ssid = methodCall.argument("ssid");
         String password = methodCall.argument("password");
-        WifiConfiguration wifiConfig = createWifiConfig(ssid, password);
+        WifiConfiguration wifiConfig = isExist(wifiManager,ssid);
+        int netId = -1;
+        if(wifiConfig == null) {
+            wifiConfig = createWifiConfig(ssid, password);
+            netId = wifiManager.addNetwork(wifiConfig);
+        }else{
+            netId = wifiConfig.networkId;
+        }
         if (wifiConfig == null) {
             finishWithError("unavailable", "wifi config is null!");
             return;
         }
-        int netId = wifiManager.addNetwork(wifiConfig);
         if (netId == -1) {
             result.success(0);
         } else {
             //wifiManager.disconnect();
+
             wifiManager.enableNetwork(netId, true);
             wifiManager.reconnect();
             result.success(1);
