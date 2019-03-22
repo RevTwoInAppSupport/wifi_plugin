@@ -241,7 +241,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         if (netId == -1) {
             result.success(0);
         } else {
-            wifiManager.disconnect();
+            //wifiManager.disconnect();
             wifiManager.enableNetwork(netId, true);
             wifiManager.reconnect();
             result.success(1);

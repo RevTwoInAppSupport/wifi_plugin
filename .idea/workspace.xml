@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="787cf1dd-c549-4da8-9244-51f5c1409ebb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java" afterPath="$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/.idea/libraries/Dart_SDK.xml" afterPath="$PROJECT_DIR$/example/.idea/libraries/Dart_SDK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/.idea/libraries/Flutter_for_Android.xml" afterPath="$PROJECT_DIR$/example/.idea/libraries/Flutter_for_Android.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/.idea/workspace.xml" afterPath="$PROJECT_DIR$/example/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/lib/main.dart" afterPath="$PROJECT_DIR$/example/lib/main.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/wifi_example.iml" afterPath="$PROJECT_DIR$/example/wifi_example.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/wifi.dart" afterPath="$PROJECT_DIR$/lib/wifi.dart" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +23,31 @@
       <file leaf-file-name="WifiDelegate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="243" column="12" lean-forward="true" selection-start-line="243" selection-start-column="12" selection-end-line="245" selection-end-column="36" />
+            <state relative-caret-position="2261">
+              <caret line="221" column="29" lean-forward="false" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -43,60 +57,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23820">
               <caret line="1666" column="24" lean-forward="false" selection-start-line="1666" selection-start-column="24" selection-end-line="1666" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#134318#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#49425#49426#0" expanded="false" />
-                <element signature="e#49463#49464#0" expanded="false" />
-                <element signature="e#52868#52869#0" expanded="false" />
-                <element signature="e#52932#52933#0" expanded="false" />
-                <element signature="e#53061#53062#0" expanded="false" />
-                <element signature="e#53126#53127#0" expanded="false" />
-                <element signature="e#53256#53257#0" expanded="false" />
-                <element signature="e#53315#53316#0" expanded="false" />
-                <element signature="e#53701#53702#0" expanded="false" />
-                <element signature="e#53764#53765#0" expanded="false" />
-                <element signature="e#53916#53917#0" expanded="false" />
-                <element signature="e#53977#53978#0" expanded="false" />
-                <element signature="e#54345#54346#0" expanded="false" />
-                <element signature="e#54409#54410#0" expanded="false" />
-                <element signature="e#54971#54972#0" expanded="false" />
-                <element signature="e#55031#55032#0" expanded="false" />
-                <element signature="e#56584#56585#0" expanded="false" />
-                <element signature="e#56622#56623#0" expanded="false" />
-                <element signature="e#57496#57497#0" expanded="false" />
-                <element signature="e#57524#57525#0" expanded="false" />
-                <element signature="e#57883#57884#0" expanded="false" />
-                <element signature="e#57911#57912#0" expanded="false" />
-                <element signature="e#58339#58340#0" expanded="false" />
-                <element signature="e#58366#58367#0" expanded="false" />
-                <element signature="e#64889#64890#0" expanded="false" />
-                <element signature="e#64948#64949#0" expanded="false" />
-                <element signature="e#66570#66571#0" expanded="false" />
-                <element signature="e#66606#66607#0" expanded="false" />
-                <element signature="e#79444#79445#0" expanded="false" />
-                <element signature="e#79508#79509#0" expanded="false" />
-                <element signature="e#89370#89371#0" expanded="false" />
-                <element signature="e#89408#89409#0" expanded="false" />
-                <element signature="e#94525#94526#0" expanded="false" />
-                <element signature="e#94566#94567#0" expanded="false" />
-                <element signature="e#95451#95452#0" expanded="false" />
-                <element signature="e#95500#95501#0" expanded="false" />
-                <element signature="e#99359#99360#0" expanded="false" />
-                <element signature="e#99400#99401#0" expanded="false" />
-                <element signature="e#99861#99862#0" expanded="false" />
-                <element signature="e#99898#99899#0" expanded="false" />
-                <element signature="e#117430#117431#0" expanded="false" />
-                <element signature="e#117478#117479#0" expanded="false" />
-                <element signature="e#120660#120661#0" expanded="false" />
-                <element signature="e#120710#120711#0" expanded="false" />
-                <element signature="e#121240#121241#0" expanded="false" />
-                <element signature="e#121296#121297#0" expanded="false" />
-                <element signature="e#121883#121884#0" expanded="false" />
-                <element signature="e#121928#121929#0" expanded="false" />
-                <element signature="e#127470#127471#0" expanded="false" />
-                <element signature="e#127518#127519#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,30 +67,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3675">
               <caret line="264" column="14" lean-forward="false" selection-start-line="264" selection-start-column="14" selection-end-line="264" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#24618#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#8406#8407#0" expanded="false" />
-                <element signature="e#8435#8436#0" expanded="false" />
-                <element signature="e#8580#8581#0" expanded="false" />
-                <element signature="e#8610#8611#0" expanded="false" />
-                <element signature="e#8653#8654#0" expanded="false" />
-                <element signature="e#8713#8714#0" expanded="false" />
-                <element signature="e#8756#8757#0" expanded="false" />
-                <element signature="e#8816#8817#0" expanded="false" />
-                <element signature="e#9303#9304#0" expanded="false" />
-                <element signature="e#9355#9356#0" expanded="false" />
-                <element signature="e#9471#9472#0" expanded="false" />
-                <element signature="e#9520#9521#0" expanded="false" />
-                <element signature="e#9580#9581#0" expanded="false" />
-                <element signature="e#9631#9632#0" expanded="false" />
-                <element signature="e#9746#9747#0" expanded="false" />
-                <element signature="e#9795#9796#0" expanded="false" />
-                <element signature="e#18375#18376#0" expanded="false" />
-                <element signature="e#18399#18400#0" expanded="false" />
-                <element signature="e#24544#24545#0" expanded="false" />
-                <element signature="e#24603#24604#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,9 +77,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="615">
               <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,6 +101,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java" />
+        <option value="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -189,61 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="android/src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wifi_plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wifi_plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -328,7 +210,138 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifi_plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifi_plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifi_plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifi_plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifi_plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifiexample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifi_plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ly" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="android/src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,7 +458,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -487,62 +500,9 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/WifiManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23820">
+        <state relative-caret-position="24990">
           <caret line="1666" column="24" lean-forward="false" selection-start-line="1666" selection-start-column="24" selection-end-line="1666" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#134318#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#49425#49426#0" expanded="false" />
-            <element signature="e#49463#49464#0" expanded="false" />
-            <element signature="e#52868#52869#0" expanded="false" />
-            <element signature="e#52932#52933#0" expanded="false" />
-            <element signature="e#53061#53062#0" expanded="false" />
-            <element signature="e#53126#53127#0" expanded="false" />
-            <element signature="e#53256#53257#0" expanded="false" />
-            <element signature="e#53315#53316#0" expanded="false" />
-            <element signature="e#53701#53702#0" expanded="false" />
-            <element signature="e#53764#53765#0" expanded="false" />
-            <element signature="e#53916#53917#0" expanded="false" />
-            <element signature="e#53977#53978#0" expanded="false" />
-            <element signature="e#54345#54346#0" expanded="false" />
-            <element signature="e#54409#54410#0" expanded="false" />
-            <element signature="e#54971#54972#0" expanded="false" />
-            <element signature="e#55031#55032#0" expanded="false" />
-            <element signature="e#56584#56585#0" expanded="false" />
-            <element signature="e#56622#56623#0" expanded="false" />
-            <element signature="e#57496#57497#0" expanded="false" />
-            <element signature="e#57524#57525#0" expanded="false" />
-            <element signature="e#57883#57884#0" expanded="false" />
-            <element signature="e#57911#57912#0" expanded="false" />
-            <element signature="e#58339#58340#0" expanded="false" />
-            <element signature="e#58366#58367#0" expanded="false" />
-            <element signature="e#64889#64890#0" expanded="false" />
-            <element signature="e#64948#64949#0" expanded="false" />
-            <element signature="e#66570#66571#0" expanded="false" />
-            <element signature="e#66606#66607#0" expanded="false" />
-            <element signature="e#79444#79445#0" expanded="false" />
-            <element signature="e#79508#79509#0" expanded="false" />
-            <element signature="e#89370#89371#0" expanded="false" />
-            <element signature="e#89408#89409#0" expanded="false" />
-            <element signature="e#94525#94526#0" expanded="false" />
-            <element signature="e#94566#94567#0" expanded="false" />
-            <element signature="e#95451#95452#0" expanded="false" />
-            <element signature="e#95500#95501#0" expanded="false" />
-            <element signature="e#99359#99360#0" expanded="false" />
-            <element signature="e#99400#99401#0" expanded="false" />
-            <element signature="e#99861#99862#0" expanded="false" />
-            <element signature="e#99898#99899#0" expanded="false" />
-            <element signature="e#117430#117431#0" expanded="false" />
-            <element signature="e#117478#117479#0" expanded="false" />
-            <element signature="e#120660#120661#0" expanded="false" />
-            <element signature="e#120710#120711#0" expanded="false" />
-            <element signature="e#121240#121241#0" expanded="false" />
-            <element signature="e#121296#121297#0" expanded="false" />
-            <element signature="e#121883#121884#0" expanded="false" />
-            <element signature="e#121928#121929#0" expanded="false" />
-            <element signature="e#127470#127471#0" expanded="false" />
-            <element signature="e#127518#127519#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -550,30 +510,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3675">
           <caret line="264" column="14" lean-forward="false" selection-start-line="264" selection-start-column="14" selection-end-line="264" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#24618#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#8406#8407#0" expanded="false" />
-            <element signature="e#8435#8436#0" expanded="false" />
-            <element signature="e#8580#8581#0" expanded="false" />
-            <element signature="e#8610#8611#0" expanded="false" />
-            <element signature="e#8653#8654#0" expanded="false" />
-            <element signature="e#8713#8714#0" expanded="false" />
-            <element signature="e#8756#8757#0" expanded="false" />
-            <element signature="e#8816#8817#0" expanded="false" />
-            <element signature="e#9303#9304#0" expanded="false" />
-            <element signature="e#9355#9356#0" expanded="false" />
-            <element signature="e#9471#9472#0" expanded="false" />
-            <element signature="e#9520#9521#0" expanded="false" />
-            <element signature="e#9580#9581#0" expanded="false" />
-            <element signature="e#9631#9632#0" expanded="false" />
-            <element signature="e#9746#9747#0" expanded="false" />
-            <element signature="e#9795#9796#0" expanded="false" />
-            <element signature="e#18375#18376#0" expanded="false" />
-            <element signature="e#18399#18400#0" expanded="false" />
-            <element signature="e#24544#24545#0" expanded="false" />
-            <element signature="e#24603#24604#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -581,9 +518,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -601,60 +536,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23820">
           <caret line="1666" column="24" lean-forward="false" selection-start-line="1666" selection-start-column="24" selection-end-line="1666" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/ScanResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3675">
+          <caret line="264" column="14" lean-forward="false" selection-start-line="264" selection-start-column="14" selection-end-line="264" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#134318#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#49425#49426#0" expanded="false" />
-            <element signature="e#49463#49464#0" expanded="false" />
-            <element signature="e#52868#52869#0" expanded="false" />
-            <element signature="e#52932#52933#0" expanded="false" />
-            <element signature="e#53061#53062#0" expanded="false" />
-            <element signature="e#53126#53127#0" expanded="false" />
-            <element signature="e#53256#53257#0" expanded="false" />
-            <element signature="e#53315#53316#0" expanded="false" />
-            <element signature="e#53701#53702#0" expanded="false" />
-            <element signature="e#53764#53765#0" expanded="false" />
-            <element signature="e#53916#53917#0" expanded="false" />
-            <element signature="e#53977#53978#0" expanded="false" />
-            <element signature="e#54345#54346#0" expanded="false" />
-            <element signature="e#54409#54410#0" expanded="false" />
-            <element signature="e#54971#54972#0" expanded="false" />
-            <element signature="e#55031#55032#0" expanded="false" />
-            <element signature="e#56584#56585#0" expanded="false" />
-            <element signature="e#56622#56623#0" expanded="false" />
-            <element signature="e#57496#57497#0" expanded="false" />
-            <element signature="e#57524#57525#0" expanded="false" />
-            <element signature="e#57883#57884#0" expanded="false" />
-            <element signature="e#57911#57912#0" expanded="false" />
-            <element signature="e#58339#58340#0" expanded="false" />
-            <element signature="e#58366#58367#0" expanded="false" />
-            <element signature="e#64889#64890#0" expanded="false" />
-            <element signature="e#64948#64949#0" expanded="false" />
-            <element signature="e#66570#66571#0" expanded="false" />
-            <element signature="e#66606#66607#0" expanded="false" />
-            <element signature="e#79444#79445#0" expanded="false" />
-            <element signature="e#79508#79509#0" expanded="false" />
-            <element signature="e#89370#89371#0" expanded="false" />
-            <element signature="e#89408#89409#0" expanded="false" />
-            <element signature="e#94525#94526#0" expanded="false" />
-            <element signature="e#94566#94567#0" expanded="false" />
-            <element signature="e#95451#95452#0" expanded="false" />
-            <element signature="e#95500#95501#0" expanded="false" />
-            <element signature="e#99359#99360#0" expanded="false" />
-            <element signature="e#99400#99401#0" expanded="false" />
-            <element signature="e#99861#99862#0" expanded="false" />
-            <element signature="e#99898#99899#0" expanded="false" />
-            <element signature="e#117430#117431#0" expanded="false" />
-            <element signature="e#117478#117479#0" expanded="false" />
-            <element signature="e#120660#120661#0" expanded="false" />
-            <element signature="e#120710#120711#0" expanded="false" />
-            <element signature="e#121240#121241#0" expanded="false" />
-            <element signature="e#121296#121297#0" expanded="false" />
-            <element signature="e#121883#121884#0" expanded="false" />
-            <element signature="e#121928#121929#0" expanded="false" />
-            <element signature="e#127470#127471#0" expanded="false" />
-            <element signature="e#127518#127519#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/WifiManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23820">
+          <caret line="1666" column="24" lean-forward="false" selection-start-line="1666" selection-start-column="24" selection-end-line="1666" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -662,30 +578,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3675">
           <caret line="264" column="14" lean-forward="true" selection-start-line="264" selection-start-column="14" selection-end-line="264" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#24618#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#8406#8407#0" expanded="false" />
-            <element signature="e#8435#8436#0" expanded="false" />
-            <element signature="e#8580#8581#0" expanded="false" />
-            <element signature="e#8610#8611#0" expanded="false" />
-            <element signature="e#8653#8654#0" expanded="false" />
-            <element signature="e#8713#8714#0" expanded="false" />
-            <element signature="e#8756#8757#0" expanded="false" />
-            <element signature="e#8816#8817#0" expanded="false" />
-            <element signature="e#9303#9304#0" expanded="false" />
-            <element signature="e#9355#9356#0" expanded="false" />
-            <element signature="e#9471#9472#0" expanded="false" />
-            <element signature="e#9520#9521#0" expanded="false" />
-            <element signature="e#9580#9581#0" expanded="false" />
-            <element signature="e#9631#9632#0" expanded="false" />
-            <element signature="e#9746#9747#0" expanded="false" />
-            <element signature="e#9795#9796#0" expanded="false" />
-            <element signature="e#18375#18376#0" expanded="false" />
-            <element signature="e#18399#18400#0" expanded="false" />
-            <element signature="e#24544#24545#0" expanded="false" />
-            <element signature="e#24603#24604#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -693,9 +586,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,60 +604,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23820">
           <caret line="1666" column="24" lean-forward="false" selection-start-line="1666" selection-start-column="24" selection-end-line="1666" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#134318#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#49425#49426#0" expanded="false" />
-            <element signature="e#49463#49464#0" expanded="false" />
-            <element signature="e#52868#52869#0" expanded="false" />
-            <element signature="e#52932#52933#0" expanded="false" />
-            <element signature="e#53061#53062#0" expanded="false" />
-            <element signature="e#53126#53127#0" expanded="false" />
-            <element signature="e#53256#53257#0" expanded="false" />
-            <element signature="e#53315#53316#0" expanded="false" />
-            <element signature="e#53701#53702#0" expanded="false" />
-            <element signature="e#53764#53765#0" expanded="false" />
-            <element signature="e#53916#53917#0" expanded="false" />
-            <element signature="e#53977#53978#0" expanded="false" />
-            <element signature="e#54345#54346#0" expanded="false" />
-            <element signature="e#54409#54410#0" expanded="false" />
-            <element signature="e#54971#54972#0" expanded="false" />
-            <element signature="e#55031#55032#0" expanded="false" />
-            <element signature="e#56584#56585#0" expanded="false" />
-            <element signature="e#56622#56623#0" expanded="false" />
-            <element signature="e#57496#57497#0" expanded="false" />
-            <element signature="e#57524#57525#0" expanded="false" />
-            <element signature="e#57883#57884#0" expanded="false" />
-            <element signature="e#57911#57912#0" expanded="false" />
-            <element signature="e#58339#58340#0" expanded="false" />
-            <element signature="e#58366#58367#0" expanded="false" />
-            <element signature="e#64889#64890#0" expanded="false" />
-            <element signature="e#64948#64949#0" expanded="false" />
-            <element signature="e#66570#66571#0" expanded="false" />
-            <element signature="e#66606#66607#0" expanded="false" />
-            <element signature="e#79444#79445#0" expanded="false" />
-            <element signature="e#79508#79509#0" expanded="false" />
-            <element signature="e#89370#89371#0" expanded="false" />
-            <element signature="e#89408#89409#0" expanded="false" />
-            <element signature="e#94525#94526#0" expanded="false" />
-            <element signature="e#94566#94567#0" expanded="false" />
-            <element signature="e#95451#95452#0" expanded="false" />
-            <element signature="e#95500#95501#0" expanded="false" />
-            <element signature="e#99359#99360#0" expanded="false" />
-            <element signature="e#99400#99401#0" expanded="false" />
-            <element signature="e#99861#99862#0" expanded="false" />
-            <element signature="e#99898#99899#0" expanded="false" />
-            <element signature="e#117430#117431#0" expanded="false" />
-            <element signature="e#117478#117479#0" expanded="false" />
-            <element signature="e#120660#120661#0" expanded="false" />
-            <element signature="e#120710#120711#0" expanded="false" />
-            <element signature="e#121240#121241#0" expanded="false" />
-            <element signature="e#121296#121297#0" expanded="false" />
-            <element signature="e#121883#121884#0" expanded="false" />
-            <element signature="e#121928#121929#0" expanded="false" />
-            <element signature="e#127470#127471#0" expanded="false" />
-            <element signature="e#127518#127519#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -774,30 +612,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#24618#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#8406#8407#0" expanded="false" />
-            <element signature="e#8435#8436#0" expanded="false" />
-            <element signature="e#8580#8581#0" expanded="false" />
-            <element signature="e#8610#8611#0" expanded="false" />
-            <element signature="e#8653#8654#0" expanded="false" />
-            <element signature="e#8713#8714#0" expanded="false" />
-            <element signature="e#8756#8757#0" expanded="false" />
-            <element signature="e#8816#8817#0" expanded="false" />
-            <element signature="e#9303#9304#0" expanded="false" />
-            <element signature="e#9355#9356#0" expanded="false" />
-            <element signature="e#9471#9472#0" expanded="false" />
-            <element signature="e#9520#9521#0" expanded="false" />
-            <element signature="e#9580#9581#0" expanded="false" />
-            <element signature="e#9631#9632#0" expanded="false" />
-            <element signature="e#9746#9747#0" expanded="false" />
-            <element signature="e#9795#9796#0" expanded="false" />
-            <element signature="e#18375#18376#0" expanded="false" />
-            <element signature="e#18399#18400#0" expanded="false" />
-            <element signature="e#24544#24545#0" expanded="false" />
-            <element signature="e#24603#24604#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -805,9 +620,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -825,9 +638,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,74 +660,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/WifiManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23820">
           <caret line="1666" column="24" lean-forward="false" selection-start-line="1666" selection-start-column="24" selection-end-line="1666" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#134318#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#49425#49426#0" expanded="false" />
-            <element signature="e#49463#49464#0" expanded="false" />
-            <element signature="e#52868#52869#0" expanded="false" />
-            <element signature="e#52932#52933#0" expanded="false" />
-            <element signature="e#53061#53062#0" expanded="false" />
-            <element signature="e#53126#53127#0" expanded="false" />
-            <element signature="e#53256#53257#0" expanded="false" />
-            <element signature="e#53315#53316#0" expanded="false" />
-            <element signature="e#53701#53702#0" expanded="false" />
-            <element signature="e#53764#53765#0" expanded="false" />
-            <element signature="e#53916#53917#0" expanded="false" />
-            <element signature="e#53977#53978#0" expanded="false" />
-            <element signature="e#54345#54346#0" expanded="false" />
-            <element signature="e#54409#54410#0" expanded="false" />
-            <element signature="e#54971#54972#0" expanded="false" />
-            <element signature="e#55031#55032#0" expanded="false" />
-            <element signature="e#56584#56585#0" expanded="false" />
-            <element signature="e#56622#56623#0" expanded="false" />
-            <element signature="e#57496#57497#0" expanded="false" />
-            <element signature="e#57524#57525#0" expanded="false" />
-            <element signature="e#57883#57884#0" expanded="false" />
-            <element signature="e#57911#57912#0" expanded="false" />
-            <element signature="e#58339#58340#0" expanded="false" />
-            <element signature="e#58366#58367#0" expanded="false" />
-            <element signature="e#64889#64890#0" expanded="false" />
-            <element signature="e#64948#64949#0" expanded="false" />
-            <element signature="e#66570#66571#0" expanded="false" />
-            <element signature="e#66606#66607#0" expanded="false" />
-            <element signature="e#79444#79445#0" expanded="false" />
-            <element signature="e#79508#79509#0" expanded="false" />
-            <element signature="e#89370#89371#0" expanded="false" />
-            <element signature="e#89408#89409#0" expanded="false" />
-            <element signature="e#94525#94526#0" expanded="false" />
-            <element signature="e#94566#94567#0" expanded="false" />
-            <element signature="e#95451#95452#0" expanded="false" />
-            <element signature="e#95500#95501#0" expanded="false" />
-            <element signature="e#99359#99360#0" expanded="false" />
-            <element signature="e#99400#99401#0" expanded="false" />
-            <element signature="e#99861#99862#0" expanded="false" />
-            <element signature="e#99898#99899#0" expanded="false" />
-            <element signature="e#117430#117431#0" expanded="false" />
-            <element signature="e#117478#117479#0" expanded="false" />
-            <element signature="e#120660#120661#0" expanded="false" />
-            <element signature="e#120710#120711#0" expanded="false" />
-            <element signature="e#121240#121241#0" expanded="false" />
-            <element signature="e#121296#121297#0" expanded="false" />
-            <element signature="e#121883#121884#0" expanded="false" />
-            <element signature="e#121928#121929#0" expanded="false" />
-            <element signature="e#127470#127471#0" expanded="false" />
-            <element signature="e#127518#127519#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -924,37 +672,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3675">
           <caret line="264" column="14" lean-forward="false" selection-start-line="264" selection-start-column="14" selection-end-line="264" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#24618#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#8406#8407#0" expanded="false" />
-            <element signature="e#8435#8436#0" expanded="false" />
-            <element signature="e#8580#8581#0" expanded="false" />
-            <element signature="e#8610#8611#0" expanded="false" />
-            <element signature="e#8653#8654#0" expanded="false" />
-            <element signature="e#8713#8714#0" expanded="false" />
-            <element signature="e#8756#8757#0" expanded="false" />
-            <element signature="e#8816#8817#0" expanded="false" />
-            <element signature="e#9303#9304#0" expanded="false" />
-            <element signature="e#9355#9356#0" expanded="false" />
-            <element signature="e#9471#9472#0" expanded="false" />
-            <element signature="e#9520#9521#0" expanded="false" />
-            <element signature="e#9580#9581#0" expanded="false" />
-            <element signature="e#9631#9632#0" expanded="false" />
-            <element signature="e#9746#9747#0" expanded="false" />
-            <element signature="e#9795#9796#0" expanded="false" />
-            <element signature="e#18375#18376#0" expanded="false" />
-            <element signature="e#18399#18400#0" expanded="false" />
-            <element signature="e#24544#24545#0" expanded="false" />
-            <element signature="e#24603#24604#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="243" column="12" lean-forward="true" selection-start-line="243" selection-start-column="12" selection-end-line="245" selection-end-column="36" />
+        <state relative-caret-position="2261">
+          <caret line="221" column="29" lean-forward="false" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
