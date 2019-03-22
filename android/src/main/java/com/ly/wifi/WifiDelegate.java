@@ -209,13 +209,13 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     public void removeNetwork(MethodCall methodCall,MethodChannel.Result result){
         result.success(true);
         clearMethodCallAndResult();
-        //String ssid = methodCall.argument("ssid");
-        //WifiConfiguration wifiConfig = isExist(wifiManager, ssid);
-        //if(wifiConfig != null) {
-            //result.success(wifiManager.removeNetwork(wifiConfig.networkId));
-        /*}else{
+        String ssid = methodCall.argument("ssid");
+        WifiConfiguration wifiConfig = isExist(wifiManager, ssid);
+        if(wifiConfig != null) {
+            result.success(wifiManager.disconnect());
+        }else{
             finishWithError("not_found", "network can not be found.");
-        }*/
+        }
     }
 
     public void connection(MethodCall methodCall, MethodChannel.Result result) {
@@ -254,8 +254,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         if (netId == -1) {
             result.success(0);
         } else {
-            //wifiManager.disconnect();
-
+            wifiManager.disconnect();
             wifiManager.enableNetwork(netId, true);
             wifiManager.reconnect();
             result.success(1);
