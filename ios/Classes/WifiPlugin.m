@@ -30,7 +30,7 @@
         NSString *ip = [self getIPAddress];
         if ([ip isEqualToString: @"error"]) {
             result([FlutterError errorWithCode:@"UNAVAILABLE"
-                                       message:@"wifi name unavailable"
+                                       message:@"wifi ip unavailable"
                                        details:nil]);
         } else {
             result(ip);
