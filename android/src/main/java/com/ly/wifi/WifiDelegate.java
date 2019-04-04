@@ -130,23 +130,6 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
     if (info != null && info.isConnected()) {
       if (info.getType() == ConnectivityManager.TYPE_WIFI) {
-        try {
-          for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces();
-              en.hasMoreElements(); ) {
-            NetworkInterface intf = en.nextElement();
-            for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses();
-                enumIpAddr.hasMoreElements(); ) {
-              InetAddress inetAddress = enumIpAddr.nextElement();
-              if (!inetAddress.isLoopbackAddress() && inetAddress instanceof Inet4Address) {
-                result.success(inetAddress.getHostAddress());
-                clearMethodCallAndResult();
-              }
-            }
-          }
-        } catch (SocketException e) {
-          e.printStackTrace();
-        }
-      } else if (info.getType() == ConnectivityManager.TYPE_WIFI) {
         WifiInfo wifiInfo = wifiManager.getConnectionInfo();
         String ipAddress = intIP2StringIP(wifiInfo.getIpAddress());
         result.success(ipAddress);
