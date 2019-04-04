@@ -129,7 +129,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     NetworkInfo info = ((ConnectivityManager) activity.getSystemService(
         Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
     if (info != null && info.isConnected()) {
-      if (info.getType() == ConnectivityManager.TYPE_MOBILE) {
+      if (info.getType() == ConnectivityManager.TYPE_WIFI) {
         try {
           for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces();
               en.hasMoreElements(); ) {
