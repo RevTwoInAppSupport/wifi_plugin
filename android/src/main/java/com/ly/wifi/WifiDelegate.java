@@ -242,8 +242,9 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       if (wifiManager.getConnectionInfo().getNetworkId() != -1) {
         history.add(wifiManager.getConnectionInfo().getNetworkId());
       }
+      wifiManager.disconnect();
       wifiManager.enableNetwork(netId, true);
-      //wifiManager.reconnect();
+      wifiManager.reconnect();
       result.success(1);
     }
     clearMethodCallAndResult();
