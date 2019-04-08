@@ -216,11 +216,6 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       return;
     }
 
-        /*if (!permissionManager.isPermissionGranted(Manifest.permission.ACCESS_FINE_LOCATION)) {
-            permissionManager.askForPermission(Manifest.permission.ACCESS_FINE_LOCATION, REQUEST_ACCESS_FINE_LOCATION_PERMISSION);
-            return;
-        }*/
-
     connection();
   }
 
