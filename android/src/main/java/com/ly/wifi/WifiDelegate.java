@@ -6,10 +6,12 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.NetworkSpecifier;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 
@@ -241,7 +243,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         history.add(wifiManager.getConnectionInfo().getNetworkId());
       }
       wifiManager.enableNetwork(netId, true);
-      wifiManager.reconnect();
+      //wifiManager.reconnect();
       result.success(1);
     }
     clearMethodCallAndResult();
