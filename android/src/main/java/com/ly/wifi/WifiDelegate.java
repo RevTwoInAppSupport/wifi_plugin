@@ -168,6 +168,9 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         String ipAddress = intIP2StringIP(wifiInfo.getIpAddress());
         result.success(ipAddress);
         clearMethodCallAndResult();
+      } else {
+        String humanType = info.getTypeName();
+        finishWithError("unavailable", humanType);
       }
     } else {
       finishWithError("unavailable", "ip not available.");
