@@ -128,10 +128,42 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       finishWithAlreadyActiveError();
       return;
     }
-    launchIP();
+    //launchIP();
+    launchIPWifi();
+    //launchIPActiveWifi();
+  }
+
+  private void launchIPActiveWifi() {
+    Log.v("launchIPActiveWifi", "launchIPActiveWifi");
+    NetworkInfo info = ((ConnectivityManager) activity.getSystemService(Context.CONNECTIVITY_SERVICE)).getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+    if (info != null && info.isConnected()) {
+        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+        String ipAddress = intIP2StringIP(wifiInfo.getIpAddress());
+        result.success(ipAddress);
+        clearMethodCallAndResult();
+    } else {
+      finishWithError("unavailable", "ip not available.");
+    }
+  }
+
+  private void launchIPWifi() {
+    Log.v("launchIPWifi", "launchIPWifi");
+    NetworkInfo[] infos = ((ConnectivityManager) activity.getSystemService(Context.CONNECTIVITY_SERVICE)).getAllNetworkInfo();
+    for(NetworkInfo info : infos) {
+      Log.v("wifiType", info.getTypeName() + ", Connected: " + String.valueOf(info.isConnected()));
+      if (info != null && info.isConnected() && info.getType() == ConnectivityManager.TYPE_WIFI) {
+        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+        String ipAddress = intIP2StringIP(wifiInfo.getIpAddress());
+        result.success(ipAddress);
+        clearMethodCallAndResult();
+        return;
+      }
+    }
+    finishWithError("unavailable", "ip not available.");
   }
 
   private void launchIP() {
+  	Log.v("launchIP", "launchIP");
     NetworkInfo info = ((ConnectivityManager) activity.getSystemService(
         Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
     if (info != null && info.isConnected()) {
@@ -140,6 +172,9 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         String ipAddress = intIP2StringIP(wifiInfo.getIpAddress());
         result.success(ipAddress);
         clearMethodCallAndResult();
+      } else {
+        String humanType = info.getTypeName();
+        finishWithError("unavailable", humanType);
       }
     } else {
       finishWithError("unavailable", "ip not available.");
