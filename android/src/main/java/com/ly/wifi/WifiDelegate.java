@@ -239,7 +239,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
   public void removeNetwork(MethodCall methodCall, MethodChannel.Result result) {
     if (!history.isEmpty()) {
       wifiManager.enableNetwork(history.remove(history.size() - 1), true);
-      wifiManager.removeNetwork(isExist(wifiManager,methodCall.argument("ssid")).networkId);
+      //wifiManager.removeNetwork(isExist(wifiManager,methodCall.argument("ssid")).networkId);
       result.success(true);
     } else {
       result.success(false);
