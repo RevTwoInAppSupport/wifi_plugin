@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="787cf1dd-c549-4da8-9244-51f5c1409ebb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java" afterPath="$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,9 +22,11 @@
       <file leaf-file-name="WifiPlugin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
+            <state relative-caret-position="525">
               <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,21 +34,11 @@
       <file leaf-file-name="WifiDelegate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="245" column="8" lean-forward="false" selection-start-line="245" selection-start-column="8" selection-end-line="245" selection-end-column="8" />
+            <state relative-caret-position="-306">
+              <caret line="92" column="4" lean-forward="false" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WifiManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/WifiManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="1329" column="19" lean-forward="false" selection-start-line="1329" selection-start-column="19" selection-end-line="1329" selection-end-column="19" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -63,9 +56,76 @@
       <file leaf-file-name="WifiConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/WifiConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-316">
+            <state relative-caret-position="4245">
               <caret line="316" column="15" lean-forward="false" selection-start-line="316" selection-start-column="15" selection-end-line="316" selection-end-column="15" />
-              <folding />
+              <folding>
+                <element signature="e#0#84805#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#19237#19238#0" expanded="false" />
+                <element signature="e#19272#19273#0" expanded="false" />
+                <element signature="e#21231#21232#0" expanded="false" />
+                <element signature="e#21278#21279#0" expanded="false" />
+                <element signature="e#23450#23451#0" expanded="false" />
+                <element signature="e#23480#23481#0" expanded="false" />
+                <element signature="e#36098#36099#0" expanded="false" />
+                <element signature="e#36154#36155#0" expanded="false" />
+                <element signature="e#36368#36369#0" expanded="false" />
+                <element signature="e#36414#36415#0" expanded="false" />
+                <element signature="e#37381#37382#0" expanded="false" />
+                <element signature="e#37431#37432#0" expanded="false" />
+                <element signature="e#37694#37695#0" expanded="false" />
+                <element signature="e#37735#37736#0" expanded="false" />
+                <element signature="e#37955#37956#0" expanded="false" />
+                <element signature="e#38002#38003#0" expanded="false" />
+                <element signature="e#38258#38259#0" expanded="false" />
+                <element signature="e#38304#38305#0" expanded="false" />
+                <element signature="e#38518#38519#0" expanded="false" />
+                <element signature="e#38563#38564#0" expanded="false" />
+                <element signature="e#38812#38813#0" expanded="false" />
+                <element signature="e#38869#38870#0" expanded="false" />
+                <element signature="e#39121#39122#0" expanded="false" />
+                <element signature="e#39175#39176#0" expanded="false" />
+                <element signature="e#39790#39791#0" expanded="false" />
+                <element signature="e#39862#39863#0" expanded="false" />
+                <element signature="e#39920#39921#0" expanded="false" />
+                <element signature="e#39969#39970#0" expanded="false" />
+                <element signature="e#40017#40018#0" expanded="false" />
+                <element signature="e#40065#40066#0" expanded="false" />
+                <element signature="e#41232#41233#0" expanded="false" />
+                <element signature="e#41270#41271#0" expanded="false" />
+                <element signature="e#41418#41419#0" expanded="false" />
+                <element signature="e#41485#41486#0" expanded="false" />
+                <element signature="e#42408#42409#0" expanded="false" />
+                <element signature="e#42469#42470#0" expanded="false" />
+                <element signature="e#43511#43512#0" expanded="false" />
+                <element signature="e#43576#43577#0" expanded="false" />
+                <element signature="e#43763#43764#0" expanded="false" />
+                <element signature="e#43823#43824#0" expanded="false" />
+                <element signature="e#46780#46781#0" expanded="false" />
+                <element signature="e#46833#46834#0" expanded="false" />
+                <element signature="e#47015#47016#0" expanded="false" />
+                <element signature="e#47069#47070#0" expanded="false" />
+                <element signature="e#51049#51050#0" expanded="false" />
+                <element signature="e#51100#51101#0" expanded="false" />
+                <element signature="e#51196#51197#0" expanded="false" />
+                <element signature="e#51245#51246#0" expanded="false" />
+                <element signature="e#51352#51353#0" expanded="false" />
+                <element signature="e#51401#51402#0" expanded="false" />
+                <element signature="e#51667#51668#0" expanded="false" />
+                <element signature="e#51713#51714#0" expanded="false" />
+                <element signature="e#69214#69215#0" expanded="false" />
+                <element signature="e#69253#69254#0" expanded="false" />
+                <element signature="e#69321#69322#0" expanded="false" />
+                <element signature="e#69360#69361#0" expanded="false" />
+                <element signature="e#69908#69909#0" expanded="false" />
+                <element signature="e#69960#69961#0" expanded="false" />
+                <element signature="e#72682#72683#0" expanded="false" />
+                <element signature="e#72706#72707#0" expanded="false" />
+                <element signature="e#72941#72942#0" expanded="false" />
+                <element signature="e#72994#72995#0" expanded="false" />
+                <element signature="e#83352#83353#0" expanded="false" />
+                <element signature="e#83418#83419#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,10 +136,10 @@
     <findStrings>
       <find>connect</find>
       <find>addOrUpdateNetwork</find>
-      <find>remove</find>
       <find>addORUpdate</find>
       <find>removeNetwork</find>
       <find>ip</find>
+      <find>remove</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,6 +181,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -205,8 +266,36 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="android/src/main">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wifi_plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="wifi_plugin" />
@@ -252,56 +341,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wifi_plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wifi_plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ly" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wifiexample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wifi_plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -315,31 +354,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wifiexample" />
+              <option name="myItemId" value="wifi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="android/src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,8 +447,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1554740298817" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1555436233756" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -475,8 +494,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1554740298817" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1555436233756" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -642,25 +660,25 @@
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.50760454" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.51520914" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.49239543" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.48479086" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Inspector" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -685,7 +703,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -760,7 +780,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -835,7 +857,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -883,7 +907,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -917,7 +943,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -951,7 +979,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -985,7 +1015,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,7 +1035,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1065,11 +1099,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/WifiConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-316">
-          <caret line="316" column="15" lean-forward="false" selection-start-line="316" selection-start-column="15" selection-end-line="316" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="525">
+          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,26 +1117,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiPlugin.java">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/WifiConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="4245">
+          <caret line="316" column="15" lean-forward="false" selection-start-line="316" selection-start-column="15" selection-end-line="316" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#84805#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#19237#19238#0" expanded="false" />
+            <element signature="e#19272#19273#0" expanded="false" />
+            <element signature="e#21231#21232#0" expanded="false" />
+            <element signature="e#21278#21279#0" expanded="false" />
+            <element signature="e#23450#23451#0" expanded="false" />
+            <element signature="e#23480#23481#0" expanded="false" />
+            <element signature="e#36098#36099#0" expanded="false" />
+            <element signature="e#36154#36155#0" expanded="false" />
+            <element signature="e#36368#36369#0" expanded="false" />
+            <element signature="e#36414#36415#0" expanded="false" />
+            <element signature="e#37381#37382#0" expanded="false" />
+            <element signature="e#37431#37432#0" expanded="false" />
+            <element signature="e#37694#37695#0" expanded="false" />
+            <element signature="e#37735#37736#0" expanded="false" />
+            <element signature="e#37955#37956#0" expanded="false" />
+            <element signature="e#38002#38003#0" expanded="false" />
+            <element signature="e#38258#38259#0" expanded="false" />
+            <element signature="e#38304#38305#0" expanded="false" />
+            <element signature="e#38518#38519#0" expanded="false" />
+            <element signature="e#38563#38564#0" expanded="false" />
+            <element signature="e#38812#38813#0" expanded="false" />
+            <element signature="e#38869#38870#0" expanded="false" />
+            <element signature="e#39121#39122#0" expanded="false" />
+            <element signature="e#39175#39176#0" expanded="false" />
+            <element signature="e#39790#39791#0" expanded="false" />
+            <element signature="e#39862#39863#0" expanded="false" />
+            <element signature="e#39920#39921#0" expanded="false" />
+            <element signature="e#39969#39970#0" expanded="false" />
+            <element signature="e#40017#40018#0" expanded="false" />
+            <element signature="e#40065#40066#0" expanded="false" />
+            <element signature="e#41232#41233#0" expanded="false" />
+            <element signature="e#41270#41271#0" expanded="false" />
+            <element signature="e#41418#41419#0" expanded="false" />
+            <element signature="e#41485#41486#0" expanded="false" />
+            <element signature="e#42408#42409#0" expanded="false" />
+            <element signature="e#42469#42470#0" expanded="false" />
+            <element signature="e#43511#43512#0" expanded="false" />
+            <element signature="e#43576#43577#0" expanded="false" />
+            <element signature="e#43763#43764#0" expanded="false" />
+            <element signature="e#43823#43824#0" expanded="false" />
+            <element signature="e#46780#46781#0" expanded="false" />
+            <element signature="e#46833#46834#0" expanded="false" />
+            <element signature="e#47015#47016#0" expanded="false" />
+            <element signature="e#47069#47070#0" expanded="false" />
+            <element signature="e#51049#51050#0" expanded="false" />
+            <element signature="e#51100#51101#0" expanded="false" />
+            <element signature="e#51196#51197#0" expanded="false" />
+            <element signature="e#51245#51246#0" expanded="false" />
+            <element signature="e#51352#51353#0" expanded="false" />
+            <element signature="e#51401#51402#0" expanded="false" />
+            <element signature="e#51667#51668#0" expanded="false" />
+            <element signature="e#51713#51714#0" expanded="false" />
+            <element signature="e#69214#69215#0" expanded="false" />
+            <element signature="e#69253#69254#0" expanded="false" />
+            <element signature="e#69321#69322#0" expanded="false" />
+            <element signature="e#69360#69361#0" expanded="false" />
+            <element signature="e#69908#69909#0" expanded="false" />
+            <element signature="e#69960#69961#0" expanded="false" />
+            <element signature="e#72682#72683#0" expanded="false" />
+            <element signature="e#72706#72707#0" expanded="false" />
+            <element signature="e#72941#72942#0" expanded="false" />
+            <element signature="e#72994#72995#0" expanded="false" />
+            <element signature="e#83352#83353#0" expanded="false" />
+            <element signature="e#83418#83419#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/net/wifi/WifiManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="1329" column="19" lean-forward="false" selection-start-line="1329" selection-start-column="19" selection-end-line="1329" selection-end-column="19" />
+        <state relative-caret-position="54">
+          <caret line="1229" column="19" lean-forward="false" selection-start-line="1229" selection-start-column="19" selection-end-line="1229" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android/src/main/java/com/ly/wifi/WifiDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="245" column="8" lean-forward="false" selection-start-line="245" selection-start-column="8" selection-end-line="245" selection-end-column="8" />
+        <state relative-caret-position="-306">
+          <caret line="92" column="4" lean-forward="false" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

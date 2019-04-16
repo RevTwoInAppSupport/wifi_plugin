@@ -2,7 +2,9 @@ package com.ly.wifi;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -35,6 +37,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
   private static final int REQUEST_ACCESS_FINE_LOCATION_PERMISSION = 1;
   private static final int REQUEST_CHANGE_WIFI_STATE_PERMISSION = 2;
   private static List<Integer> history = new ArrayList<>();
+  NetworkChangeReceiver networkReceiver;
 
   interface PermissionManager {
     boolean isPermissionGranted(String permissionName);
@@ -72,6 +75,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     this.result = result;
     this.methodCall = methodCall;
     this.permissionManager = permissionManager;
+    this.networkReceiver = new NetworkChangeReceiver();
   }
 
   public void getSSID(MethodCall methodCall, MethodChannel.Result result) {
@@ -200,6 +204,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
   public void removeNetwork(MethodCall methodCall, MethodChannel.Result result) {
     if (!history.isEmpty()) {
       wifiManager.enableNetwork(history.remove(history.size() - 1), true);
+      wifiManager.removeNetwork(isExist(wifiManager,methodCall.argument("ssid")).networkId);
       result.success(true);
     } else {
       result.success(false);
@@ -242,10 +247,14 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       if (wifiManager.getConnectionInfo().getNetworkId() != -1) {
         history.add(wifiManager.getConnectionInfo().getNetworkId());
       }
-      wifiManager.disconnect();
-      wifiManager.enableNetwork(netId, true);
-      wifiManager.reconnect();
-      result.success(1);
+      if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
+        wifiManager.enableNetwork(netId, true);
+        wifiManager.reconnect();
+        result.success(1);
+        clearMethodCallAndResult();
+      } else {
+        networkReceiver.connect(netId);
+      }
     }
     clearMethodCallAndResult();
   }
@@ -259,9 +268,6 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     config.allowedPairwiseCiphers.clear();
     config.allowedProtocols.clear();
     WifiConfiguration tempConfig = isExist(wifiManager, ssid);
-    if (tempConfig != null) {
-      wifiManager.removeNetwork(tempConfig.networkId);
-    }
     config.preSharedKey = "\"" + Password + "\"";
     config.hiddenSSID = true;
     config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
@@ -331,5 +337,28 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
   private void clearMethodCallAndResult() {
     methodCall = null;
     result = null;
+  }
+
+  public class NetworkChangeReceiver extends BroadcastReceiver {
+    private int netId;
+    private boolean willLink = false;
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+      NetworkInfo info = intent.getParcelableExtra(ConnectivityManager.EXTRA_NETWORK_INFO);
+      if (info.getState() == NetworkInfo.State.DISCONNECTED && willLink) {
+        wifiManager.enableNetwork(netId, true);
+        wifiManager.reconnect();
+        result.success(1);
+        willLink = false;
+        clearMethodCallAndResult();
+      }
+    }
+
+    public void connect(int netId) {
+      this.netId = netId;
+      willLink = true;
+      wifiManager.disconnect();
+    }
   }
 }
