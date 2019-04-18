@@ -302,7 +302,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
             }
           }
         });
-
+        networkReceiver.connect(netId);
       }
       else {
         wifiManager.enableNetwork(netId, true);
