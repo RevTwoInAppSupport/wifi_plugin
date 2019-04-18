@@ -1,6 +1,7 @@
 package com.ly.wifi;
 
 import android.content.Context;
+import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 
 import io.flutter.plugin.common.MethodCall;
@@ -21,7 +22,8 @@ public class WifiPlugin implements MethodCallHandler {
     public static void registerWith(Registrar registrar) {
         final MethodChannel channel = new MethodChannel(registrar.messenger(), "plugins.ly.com/wifi");
         WifiManager wifiManager = (WifiManager) registrar.activeContext().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        final WifiDelegate delegate = new WifiDelegate(registrar.activity(), wifiManager);
+        ConnectivityManager connectivityManager = registrar.activeContext().getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        final WifiDelegate delegate = new WifiDelegate(registrar.activity(), wifiManager,connectivityManager);
         registrar.addRequestPermissionsResultListener(delegate);
         channel.setMethodCallHandler(new WifiPlugin(registrar, delegate));
     }

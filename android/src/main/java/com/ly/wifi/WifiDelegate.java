@@ -7,7 +7,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
+import android.net.NetworkRequest;
 import android.net.NetworkSpecifier;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
@@ -33,6 +36,7 @@ import io.flutter.plugin.common.PluginRegistry;
 public class WifiDelegate implements PluginRegistry.RequestPermissionsResultListener {
   private Activity activity;
   private WifiManager wifiManager;
+  private ConnectivityManager connectivityManager;
   private PermissionManager permissionManager;
   private static final int REQUEST_ACCESS_FINE_LOCATION_PERMISSION = 1;
   private static final int REQUEST_CHANGE_WIFI_STATE_PERMISSION = 2;
@@ -45,7 +49,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     void askForPermission(String permissionName, int requestCode);
   }
 
-  public WifiDelegate(final Activity activity, final WifiManager wifiManager) {
+  public WifiDelegate(final Activity activity, final WifiManager wifiManager,ConnectivityManager connectivityManager) {
     this(activity, wifiManager, null, null, new PermissionManager() {
 
       @Override
@@ -58,7 +62,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       public void askForPermission(String permissionName, int requestCode) {
         ActivityCompat.requestPermissions(activity, new String[] {permissionName}, requestCode);
       }
-    });
+    },connectivityManager);
   }
 
   private MethodChannel.Result result;
@@ -69,13 +73,14 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       WifiManager wifiManager,
       MethodChannel.Result result,
       MethodCall methodCall,
-      PermissionManager permissionManager) {
+      PermissionManager permissionManager,ConnectivityManager connectivityManager) {
     this.activity = activity;
     this.wifiManager = wifiManager;
     this.result = result;
     this.methodCall = methodCall;
     this.permissionManager = permissionManager;
     this.networkReceiver = new NetworkChangeReceiver();
+    this.connectivityManager = connectivityManager;
   }
 
   public void getSSID(MethodCall methodCall, MethodChannel.Result result) {
@@ -282,13 +287,28 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       if (wifiManager.getConnectionInfo().getNetworkId() != -1) {
         history.add(wifiManager.getConnectionInfo().getNetworkId());
       }
-      if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
+
+      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        NetworkRequest.Builder request = new NetworkRequest.Builder();
+        Log.i("forceCellularConnection","request WIFI enable");
+        request.addCapability(NetworkCapabilities.TRANSPORT_WIFI);
+        connectivityManager.requestNetwork(request.build(), new ConnectivityManager.NetworkCallback() {
+          @Override
+          public void onAvailable(Network network) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+              connectivityManager.setProcessDefaultNetwork(network);
+
+              connectivityManager.bindProcessToNetwork(network);
+            }
+          }
+        });
+
+      }
+      else {
         wifiManager.enableNetwork(netId, true);
         wifiManager.reconnect();
         result.success(1);
         clearMethodCallAndResult();
-      } else {
-        networkReceiver.connect(netId);
       }
     }
     clearMethodCallAndResult();
