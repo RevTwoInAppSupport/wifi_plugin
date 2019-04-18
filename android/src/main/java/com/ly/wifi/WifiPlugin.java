@@ -22,7 +22,7 @@ public class WifiPlugin implements MethodCallHandler {
     public static void registerWith(Registrar registrar) {
         final MethodChannel channel = new MethodChannel(registrar.messenger(), "plugins.ly.com/wifi");
         WifiManager wifiManager = (WifiManager) registrar.activeContext().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        ConnectivityManager connectivityManager = registrar.activeContext().getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager connectivityManager = (ConnectivityManager) registrar.activeContext().getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         final WifiDelegate delegate = new WifiDelegate(registrar.activity(), wifiManager,connectivityManager);
         registrar.addRequestPermissionsResultListener(delegate);
         channel.setMethodCallHandler(new WifiPlugin(registrar, delegate));
