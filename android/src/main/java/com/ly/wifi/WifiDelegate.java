@@ -299,7 +299,6 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       }
 
     }
-    clearMethodCallAndResult();
   }
 
   private WifiConfiguration createWifiConfig(String ssid, String Password) {
@@ -396,6 +395,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       if (info.getState() == NetworkInfo.State.DISCONNECTED && willLink) {
         wifiManager.enableNetwork(netId, true);
         wifiManager.reconnect();
+        result.success(1);
         willLink = false;
         clearMethodCallAndResult();
       }
@@ -405,7 +405,6 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       this.netId = netId;
       willLink = true;
       wifiManager.disconnect();
-      result.success(1);
     }
   }
 }
