@@ -288,6 +288,11 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         history.add(wifiManager.getConnectionInfo().getNetworkId());
       }
 
+      wifiManager.enableNetwork(netId, true);
+      wifiManager.reconnect();
+      result.success(1);
+      clearMethodCallAndResult();
+
       if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
         NetworkRequest.Builder request = new NetworkRequest.Builder();
         Log.i("forceCellularConnection","request WIFI enable");
@@ -304,12 +309,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
         });
         networkReceiver.connect(netId);
       }
-      else {
-        wifiManager.enableNetwork(netId, true);
-        wifiManager.reconnect();
-        result.success(1);
-        clearMethodCallAndResult();
-      }
+
     }
     clearMethodCallAndResult();
   }
@@ -412,6 +412,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
 
     public void connect(int netId) {
       this.netId = netId;
+
       willLink = true;
       wifiManager.disconnect();
     }
