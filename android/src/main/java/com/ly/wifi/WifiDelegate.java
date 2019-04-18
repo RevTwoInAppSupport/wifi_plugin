@@ -323,6 +323,9 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     config.allowedPairwiseCiphers.clear();
     config.allowedProtocols.clear();
     WifiConfiguration tempConfig = isExist(wifiManager, ssid);
+    if(tempConfig != null){
+      wifiManager.removeNetwork(tempConfig.networkId);
+    }
     config.preSharedKey = "\"" + Password + "\"";
     config.hiddenSSID = true;
     config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
