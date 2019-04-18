@@ -307,7 +307,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
             }
           }
         });
-        networkReceiver.connect(netId);
+        //networkReceiver.connect(netId);
       }
 
     }
