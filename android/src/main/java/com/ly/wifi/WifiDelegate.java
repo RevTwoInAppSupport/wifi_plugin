@@ -314,7 +314,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       wifiManager.removeNetwork(tempConfig.networkId);
     }
     config.preSharedKey = "\"" + Password + "\"";
-    config.hiddenSSID = false;
+    config.hiddenSSID = true;
     config.priority = 9999;
     config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
     config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);
