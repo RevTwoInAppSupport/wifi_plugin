@@ -328,6 +328,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     }
     config.preSharedKey = "\"" + Password + "\"";
     config.hiddenSSID = true;
+    config.priority = 9999;
     config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
     config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.TKIP);
     config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA_PSK);
