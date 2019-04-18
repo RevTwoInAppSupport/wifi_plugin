@@ -1,6 +1,7 @@
 package com.ly.wifi;
 
 import android.content.Context;
+import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 
@@ -25,6 +26,14 @@ public class WifiPlugin implements MethodCallHandler {
         ConnectivityManager connectivityManager = (ConnectivityManager) registrar.activeContext().getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         final WifiDelegate delegate = new WifiDelegate(registrar.activity(), wifiManager,connectivityManager);
         registrar.addRequestPermissionsResultListener(delegate);
+
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(WifiManager.NETWORK_STATE_CHANGED_ACTION);
+        filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
+        registrar
+            .context()
+            .registerReceiver(delegate.networkReceiver,filter);
+
         channel.setMethodCallHandler(new WifiPlugin(registrar, delegate));
     }
 

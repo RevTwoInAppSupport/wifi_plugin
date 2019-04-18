@@ -283,6 +283,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     }
     if (netId == -1) {
       result.success(0);
+      clearMethodCallAndResult();
     } else {
       if (wifiManager.getConnectionInfo().getNetworkId() != -1) {
         history.add(wifiManager.getConnectionInfo().getNetworkId());
