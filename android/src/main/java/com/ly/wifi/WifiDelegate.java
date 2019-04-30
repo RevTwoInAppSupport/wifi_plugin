@@ -159,7 +159,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       if (info != null && info.isConnected() && info.getType() == ConnectivityManager.TYPE_WIFI) {
         WifiInfo wifiInfo = wifiManager.getConnectionInfo();
         String ipAddress = intIP2StringIP(wifiInfo.getIpAddress());
-        result.success(ipAddress);
+        setSuccess("launchIPWifi[success]",ipAddress);
         clearMethodCallAndResult();
         return;
       }
@@ -247,9 +247,9 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     if (wifiConfiguration != null) {
       //wifiManager.enableNetwork(history.remove(history.size() - 1), true);
       wifiManager.removeNetwork(wifiConfiguration.networkId);
-      result.success(true);
+      setSuccess("removeNetwork[success]",true);
     } else {
-      result.success(false);
+      setSuccess("removeNetwork[failure]",false);
     }
     clearMethodCallAndResult();
   }
@@ -294,7 +294,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
         wifiManager.enableNetwork(netId, true);
         wifiManager.reconnect();
-        result.success(1);
+        setSuccess("connection[pre-Oreo version]",1);
         clearMethodCallAndResult();
       }else{
         networkReceiver.connect(netId);
@@ -387,6 +387,12 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     result = null;
   }
 
+  private void setSuccess(String from,Object object){
+    Log.d("Trying to respond","From:"+from+"  with"+object);
+    Log.d("Result object available",String.valueOf(result != null));
+    result.success(object);
+  }
+
   public class NetworkChangeReceiver extends BroadcastReceiver {
     private int netId;
     private boolean willLink = false;
@@ -397,7 +403,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       if (info.getState() == NetworkInfo.State.DISCONNECTED && willLink) {
         wifiManager.enableNetwork(netId, true);
         wifiManager.reconnect();
-        result.success(1);
+        setSuccess("onReceive[Wifi Receiver]",1);
         willLink = false;
         clearMethodCallAndResult();
       }
