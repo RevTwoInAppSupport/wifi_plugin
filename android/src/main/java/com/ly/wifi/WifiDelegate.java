@@ -7,11 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
-import android.net.Network;
-import android.net.NetworkCapabilities;
 import android.net.NetworkInfo;
-import android.net.NetworkRequest;
-import android.net.NetworkSpecifier;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiInfo;
@@ -20,12 +16,7 @@ import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 
-import java.net.Inet4Address;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.SocketException;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 
@@ -134,7 +125,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
       return;
     }
     //launchIP();
-    launchIPWifi();
+    launchWifiIP();
     //launchIPActiveWifi();
   }
 
@@ -151,15 +142,15 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     }
   }
 
-  private void launchIPWifi() {
-    Log.v("launchIPWifi", "launchIPWifi");
+  private void launchWifiIP() {
+    Log.v("launchWifiIP", "launchWifiIP");
     NetworkInfo[] infos = ((ConnectivityManager) activity.getSystemService(Context.CONNECTIVITY_SERVICE)).getAllNetworkInfo();
     for(NetworkInfo info : infos) {
       Log.v("wifiType", info.getTypeName() + ", Connected: " + String.valueOf(info.isConnected()));
       if (info != null && info.isConnected() && info.getType() == ConnectivityManager.TYPE_WIFI) {
         WifiInfo wifiInfo = wifiManager.getConnectionInfo();
         String ipAddress = intIP2StringIP(wifiInfo.getIpAddress());
-        setSuccess("launchIPWifi[success]",ipAddress);
+        setSuccess("launchWifiIP[success]",ipAddress);
         clearMethodCallAndResult();
         return;
       }
@@ -242,10 +233,14 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
   }
 
   public void removeNetwork(MethodCall methodCall, MethodChannel.Result result) {
+    if (!setPendingMethodCallAndResult(methodCall, result)) {
+      finishWithAlreadyActiveError();
+      return;
+    }
+
     String ssid = (String)methodCall.argument("ssid");
     WifiConfiguration wifiConfiguration = isExist(wifiManager,ssid);
     if (wifiConfiguration != null) {
-      //wifiManager.enableNetwork(history.remove(history.size() - 1), true);
       wifiManager.removeNetwork(wifiConfiguration.networkId);
       setSuccess("removeNetwork[success]",true);
     } else {
