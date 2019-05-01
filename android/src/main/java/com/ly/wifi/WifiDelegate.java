@@ -242,6 +242,7 @@ public class WifiDelegate implements PluginRegistry.RequestPermissionsResultList
     WifiConfiguration wifiConfiguration = isExist(wifiManager,ssid);
     if (wifiConfiguration != null) {
       wifiManager.removeNetwork(wifiConfiguration.networkId);
+      wifiManager.reconnect();
       setSuccess("removeNetwork[success]",true);
     } else {
       setSuccess("removeNetwork[failure]",false);
